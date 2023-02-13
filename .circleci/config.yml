@@ -38,7 +38,7 @@ jobs:
           command: |
             pip install pytest
             pytest --junitxml=test-results/junit.xml TestTriangle.py
-      - store-test-results:
+      - store_test_results:
           path: test-results
 
 # Invoke jobs via workflows
