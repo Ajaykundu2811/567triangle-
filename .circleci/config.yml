@@ -36,8 +36,8 @@ jobs:
       - run:
           # This assumes pytest is installed via the install-package step above
           command: |
-          pip install pytest
-          pytest --junitxml=test-results/junit.xml TestTriangle.py
+            pip install pytest
+            pytest --junitxml=test-results/junit.xml TestTriangle.py
       - store-test-results:
           path: test-results
 
